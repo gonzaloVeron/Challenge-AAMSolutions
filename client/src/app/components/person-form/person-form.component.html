@@ -1,0 +1,32 @@
+<h1 class="text-center">Ingresar datos</h1>
+<div class="containerB">
+  <div class="col-md-4 offset-md-4">
+    <div class="card">
+      <div class="card-body">
+        <form>
+          <fieldset>
+            <div class="form-group form-group-lg">
+              <input type="text" class="form-control" name="name" [(ngModel)]="person.name" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="surname" [(ngModel)]="person.surname" placeholder="Apellido">
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control" name="birthday" [(ngModel)]="person.birthday" placeholder="Fecha de nacimiento">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="address" [(ngModel)]="person.address" placeholder="Direccion">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" name="phoneNumber" [(ngModel)]="person.phoneNumber" placeholder="Numero de telefono" maxlength="10">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="country" [(ngModel)]="person.country" placeholder="Pais">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="saveNewPerson()">Guardar</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
